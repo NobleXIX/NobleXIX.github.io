@@ -1,0 +1,158 @@
+/*Style sheet for the Kool Stuph webpage*/
+
+html, body {
+    height: 100%; width: 100%;
+    } 
+    
+    @media print, screen and (min-width: 480px) {
+        .menu-burger, .menu-chkbx, .hamburger {
+        display:none;
+        }
+    
+    header h1 {
+        text-shadow: 2px 2px 5px rgb(30,144,255);
+        font-family: Garamond;
+        background-image: linear-gradient(rgb(255,255,255),rgb(30,144,255));
+    }
+    
+    footer{
+        text-align: center;
+        font-size: .75em;
+        font-family: Garamond;
+        background-color: rgb(200,200,200);
+        margin:0px -10px 20px -10px;
+    }
+        
+    @media print, screen and (max-width: 768px) {
+        section {
+            width: 100%;
+            text-align: center;
+        }
+    
+        section table {
+            margin: 10px auto 20px auto;
+        }
+    }
+    
+    .background{
+        background-image: linear-gradient(rgb(215, 215, 215), rgb(115,115,115));
+    }
+    
+    /*Style for the product table*/
+    section table { 
+        border: 2px solid black; 
+        width: 85%;
+    } 
+    
+    section table td, th { 
+        border: 1px solid rgb(175,175,175); 
+    } 
+    
+    section table tr:hover {
+        background-color: rgb(175,175,175);
+    } 
+    
+    section table tr:nth-child(odd) { 
+        background-color: rgb(205,205,205); 
+    }
+    
+    section table col.injuries { 
+        background-color: rgb(232,160,160); 
+    }
+    
+    header h3 {
+        text-align: center; 
+        letter-spacing: 1px;
+        background:rgb(55, 55, 55); 
+        text-shadow: 1px 1px 4px rgb(255,255,255); 
+        font-family: Copperplate, "Copperplate Gothic"; 
+        margin: -5px 0px 5px 0px;
+    }
+    
+    nav {
+        color: black;
+        background-image: linear-gradient(rgb(55, 55, 55), rgb(225, 225, 225));
+        height: 70px;
+    }
+    
+    nav ul {
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+          align-items: center;
+    }
+    
+    nav ul li { 
+        flex: 1;
+        margin: 0px;
+        padding: 0px;
+        margin: 0px;
+        border: 1px solid rgb(0,0,0);
+        text-align: center;
+    }
+    
+    li a {
+        text-decoration: none;
+        color: rbg(225,225,225);
+        line-height: 40px;
+        display: block;
+    }
+    
+    li a:hover {
+        background-color: rgb(235, 235, 235); 
+        color: black;
+    }
+    
+    /* original design (for default) */
+    header h1 {
+        text-align: center; 
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 4px rgb(225,225,225); 
+        font-family: Copperplate, "Copperplate Gothic"; 
+        margin: -5px 0px 0px 0px;
+        background-image: linear-gradient(rgb(225,225,225), rgb(30,30,30));
+    }
+    
+    section h2 {
+        font-family: Monaco; 
+        max-width: 870px;
+    }
+    
+    section div p.bolder{
+        font-weight:bold;
+    }
+    
+    section table { 
+        border: 2px solid black; 
+        width: 85%;
+    } 
+    
+    section table td, th { 
+        border: 1px solid rgb(175,175,175); 
+    } 
+    
+    section table tr:hover {
+        background-color: rgb(175,175,175);
+    } 
+    
+    section table tr:nth-child(odd) { 
+        background-color: rgb(205,205,205); 
+    }
+    
+    section table col.injuries { 
+        background-color: rgb(232,160,160); 
+    }
+    
+    @keyframes blink { 
+        0%, 
+        100% { 
+        background-color: rgb(255, 0, 0); 
+             }
+        50%  { 
+        background-color: white; 
+             } 
+    } 
+    .blink { 
+        animation: blink 1s linear infinite; 
+    } 
