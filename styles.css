@@ -4,24 +4,45 @@ html, body {
     height: 100%; width: 100%;
     } 
     
-    @media print, screen and (min-width: 480px) {
+    @media print, screen and (min-width: 480px)
         .menu-burger, .menu-chkbx, .hamburger {
         display:none;
         }
-    
-    header h1 {
-        text-shadow: 2px 2px 5px rgb(30,144,255);
-        font-family: Garamond;
-        background-image: linear-gradient(rgb(255,255,255),rgb(30,144,255));
+
+    header h2 {
+        margin: 30px 0px 0px 20px;
     }
     
-    footer{
+    header h1 a {
+        text-decoration: none;
+        text-align: center; 
+        letter-spacing: 1px;
+        margin: 9px 0px 0px 10px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        color:black;
+    }
+
+    .patterned {
+        background-image: repeating-linear-gradient(
+          45deg,
+          #ffffff 0px,
+          #ffffff 25px,
+          #000000 25px,
+          #000000 50px
+        );
+      }
+
+      footer {
         text-align: center;
-        font-size: .75em;
-        font-family: Garamond;
-        background-color: rgb(200,200,200);
-        margin:0px -10px 20px -10px;
-    }
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        position:absolute;
+        bottom:0;
+        width:100%;
+        height:60px;
+        color: lightslategray
+        }
         
     @media print, screen and (max-width: 768px) {
         section {
@@ -33,9 +54,37 @@ html, body {
             margin: 10px auto 20px auto;
         }
     }
+
+    .container {
+        margin: 15px;
+        display: flex;
+        border: 4px solid black;
+        border-radius: 10px;    
+        align-items: center;
+        align-self: center;
+        background-color: rgb(147, 132, 132);
+      }
+
+      .text {
+        flex: 1;
+        padding: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+      }
+
+      .image {
+        flex: 1;
+      }
+      
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
     
     .background{
-        background-image: linear-gradient(rgb(215, 215, 215), rgb(115,115,115));
+        align-self: center;
+        background-color: rgb(119, 106, 106);
     }
     
     /*Style for the product table*/
@@ -60,58 +109,39 @@ html, body {
         background-color: rgb(232,160,160); 
     }
     
-    header h3 {
-        text-align: center; 
-        letter-spacing: 1px;
-        background:rgb(55, 55, 55); 
-        text-shadow: 1px 1px 4px rgb(255,255,255); 
-        font-family: Copperplate, "Copperplate Gothic"; 
-        margin: -5px 0px 5px 0px;
-    }
-    
-    nav {
-        color: black;
-        background-image: linear-gradient(rgb(55, 55, 55), rgb(225, 225, 225));
-        height: 70px;
-    }
-    
     nav ul {
         width: 95%;
         display: flex;
         flex-direction: row;
         justify-content: center;
-          align-items: center;
+        align-items: center;
     }
     
-    nav ul li { 
-        flex: 1;
-        margin: 0px;
-        padding: 0px;
-        margin: 0px;
-        border: 1px solid rgb(0,0,0);
-        text-align: center;
-    }
+    nav ul li {
+            list-style: none;
+            display: inline;
+            margin: 5px 20px 0px 0px;
+            color:black;
+          }
     
+    .flex {
+        display: flex;
+        justify-content: space-between
+        align-items: baseline;
+    }
+
     li a {
         text-decoration: none;
-        color: rbg(225,225,225);
+        color:black;
         line-height: 40px;
         display: block;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
     }
     
     li a:hover {
         background-color: rgb(235, 235, 235); 
         color: black;
-    }
-    
-    /* original design (for default) */
-    header h1 {
-        text-align: center; 
-        letter-spacing: 1px;
-        text-shadow: 1px 1px 4px rgb(225,225,225); 
-        font-family: Copperplate, "Copperplate Gothic"; 
-        margin: -5px 0px 0px 0px;
-        background-image: linear-gradient(rgb(225,225,225), rgb(30,30,30));
     }
     
     section h2 {
@@ -143,16 +173,3 @@ html, body {
     section table col.injuries { 
         background-color: rgb(232,160,160); 
     }
-    
-    @keyframes blink { 
-        0%, 
-        100% { 
-        background-color: rgb(255, 0, 0); 
-             }
-        50%  { 
-        background-color: white; 
-             } 
-    } 
-    .blink { 
-        animation: blink 1s linear infinite; 
-    } 
