@@ -87,28 +87,6 @@ html, body {
         background-color: rgb(119, 106, 106);
     }
     
-    /*Style for the product table*/
-    section table { 
-        border: 2px solid black; 
-        width: 85%;
-    } 
-    
-    section table td, th { 
-        border: 1px solid rgb(175,175,175); 
-    } 
-    
-    section table tr:hover {
-        background-color: rgb(175,175,175);
-    } 
-    
-    section table tr:nth-child(odd) { 
-        background-color: rgb(205,205,205); 
-    }
-    
-    section table col.injuries { 
-        background-color: rgb(232,160,160); 
-    }
-    
     nav ul {
         width: 95%;
         display: flex;
@@ -144,32 +122,15 @@ html, body {
         color: black;
     }
     
-    section h2 {
-        font-family: Monaco; 
-        max-width: 870px;
-    }
-    
-    section div p.bolder{
-        font-weight:bold;
-    }
-    
-    section table { 
-        border: 2px solid black; 
-        width: 85%;
-    } 
-    
-    section table td, th { 
-        border: 1px solid rgb(175,175,175); 
-    } 
-    
-    section table tr:hover {
-        background-color: rgb(175,175,175);
-    } 
-    
-    section table tr:nth-child(odd) { 
-        background-color: rgb(205,205,205); 
-    }
-    
-    section table col.injuries { 
-        background-color: rgb(232,160,160); 
-    }
+    .board {
+        position: absolute;
+        top: 4.3vh;
+        left: 10vw;
+        cursor: pointer;
+      }
+      
+      .board img {
+        width: 35.3vw;
+        height: 45.5vh;
+        border-radius: 15%;
+      }
